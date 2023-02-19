@@ -13,6 +13,8 @@ export class Post extends EffectComposer {
     this.scene = scene;
     this.camera = camera;
 
+    // this.setPixelRatio(window.devicePixelRatio);
+
     this.renderPass = new RenderPass(scene, camera);
     this.addPass(this.renderPass);
 

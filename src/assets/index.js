@@ -1,14 +1,14 @@
-import model from "./m0-v3.glb";
+import model from "./m0-v6.glb";
 
 import diff_base from "./diff_base.png";
 
 import diff_1 from "./diff_01.png";
-import diff_back_0 from "./diff_back_0.webp";
+import diff_back_0 from "./diff_front_1.png";
 
 import nor_1 from "./nor_01.png";
 import spec_1 from "./spec_1.png";
 
-import mtc_light from "./mtc_light1.png";
+import mtc_light from "./mtc_light2.png";
 
 import nx from "./cbm/nx.webp";
 import ny from "./cbm/ny.webp";

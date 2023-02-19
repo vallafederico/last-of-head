@@ -1,5 +1,8 @@
 #define MPI 3.1415926535897932384626433832795
 
+attribute vec2 texcoord_2;
+varying vec2 v_texcord_2;
+
 #include <skinning_pars_vertex>
 
 uniform float u_time;
@@ -27,5 +30,7 @@ void main() {
   v_normal = normal;
   v_view = normalize(-tr.xyz);
   v_pos = gl_Position.xyz;
+
+  v_texcord_2 = texcoord_2;
   
 }
