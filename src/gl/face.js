@@ -1,5 +1,5 @@
 import { Group } from "three";
-import Material from "./mat/basic";
+import Material from "./mat/head";
 
 export class Face extends Group {
   constructor() {
@@ -23,10 +23,8 @@ export class Face extends Group {
     this.mesh.traverse((child) => {
       if (child.isMesh) {
         child.material = this.material;
-        // console.log(child);
       } else {
         this.bones.push(child);
-        // console.log("not mesh", child, child.name);
       }
     });
   }
@@ -36,11 +34,7 @@ export class Face extends Group {
 
     const { ex, ey } = window.app.gl.mouse;
 
-    // this.rotation.y = -ex * 0.01;
-    // this.rotation.x = 0.4 - ey * 0.01;
-
     if (this.bones) {
-      // console.log(window.app.gl.mouse.x);
       // bones: 2 = neck — 6-7 eyes
       const fac = 0.08;
       const breath = Math.sin(t * 0.6) * 0.01;
