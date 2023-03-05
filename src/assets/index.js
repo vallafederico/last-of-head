@@ -19,6 +19,13 @@ import pz from "./cbm/pz.webp";
 
 const cbmarr = [px, nx, py, ny, pz, nz];
 
+//
+
+import model2 from "./paper/my_anim_mesh1.glb";
+import normal2 from "./paper/my_anim_normal.png";
+import position2 from "./paper/my_anim_position.png";
+import tangent2 from "./paper/my_anim_tangent.png";
+
 export const ASSETS = {
   model,
   diff_base,
@@ -28,5 +35,11 @@ export const ASSETS = {
   spec_1,
   mtc_light,
   cbmarr,
+
+  // test
+  model2,
+  normal2,
+  position2,
+  tangent2,
   //   img: null,
 };
