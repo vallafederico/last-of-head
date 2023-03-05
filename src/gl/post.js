@@ -29,7 +29,7 @@ export class Post extends EffectComposer {
     });
     this.bokehPass.needsSwap = true;
 
-    this.addPass(this.bokehPass);
+    // this.addPass(this.bokehPass);
 
     this.addPass(new Shader());
   }
