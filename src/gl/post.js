@@ -23,7 +23,7 @@ export class Post extends EffectComposer {
 
   createPasses() {
     this.bokehPass = new BokehPass(this.scene, this.camera, {
-      focus: 3.2,
+      focus: 3.2, // 3.2 |
       aperture: 0.005,
       maxblur: 0.005,
     });
@@ -34,7 +34,9 @@ export class Post extends EffectComposer {
     this.addPass(new Shader());
   }
 
-  renderPasses(t) {}
+  renderPasses(t) {
+    this.bokehPass.focus = 3.2 - window.gui.val.anim.timeline * 0.2;
+  }
 }
 
 /*

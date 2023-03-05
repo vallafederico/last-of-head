@@ -1,4 +1,4 @@
-import { WebGLRenderer, sRGBEncoding, ACESFilmicToneMapping } from "three";
+import { WebGLRenderer } from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import Tween from "gsap";
 
@@ -90,6 +90,9 @@ export default class Gl {
     } else {
       this.renderer.render(this.scene, this.camera);
     }
+
+    // this.camera.position.y = window.gui.val.anim.timeline * 0.5;
+    // this.camera.rotation.x = -window.gui.val.anim.timeline * 0.2;
 
     // this.renderer.render(this.scene, this.camera);
   }

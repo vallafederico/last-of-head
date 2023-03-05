@@ -21,6 +21,8 @@ export default class extends Scene {
   render(t) {
     if (this.face) this.face.render(t);
     if (this.vat) this.vat.render(t);
+
+    // console.log(window.gui.val.anim.timeline);
   }
 
   resize() {}

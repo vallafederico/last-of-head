@@ -2,6 +2,7 @@ import "./style/main.css";
 import Dom from "./modules/dom";
 import Viewport from "./modules/viewport";
 import Gl from "./gl/gl";
+import { Gui } from "./gui";
 
 class App {
   constructor() {
@@ -15,6 +16,7 @@ class App {
 
   init() {
     this.dom = new Dom();
+    this.gui = new Gui();
 
     this.gl = new Gl();
 
